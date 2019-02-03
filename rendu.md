@@ -1,3 +1,10 @@
+Tableau des ip
+<table>
+  <tr>
+    <td>Machine</td>
+  </tr>
+</table>
+
 Grand2petit2
 '''
 serveur
@@ -150,3 +157,5 @@ Avec NAT et apres une recherche
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:39 REACHABLE
 
 '''
+
+
