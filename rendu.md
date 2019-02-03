@@ -4,13 +4,13 @@ Tableau des ip
     <td>Machine</td><td>net1</td><td>net2</td><td>MAC</td>
   </tr>
   <tr>
-    <td>client1</td><td>10.1.0.10</td><td>X</td>
+    <td>client1</td><td>10.1.0.10</td><td>X</td><td>08-00-27-cc-48-69</td>
   </tr>
   <tr>
-    <td>routeur1</td><td>10.1.0.254</td><td>10.2.254</td>
+    <td>routeur1</td><td>10.1.0.254</td><td>10.2.254</td><td>08-00-27-f7-16-d3</td>
   </tr>
   <tr>
-    <td>serveur1</td><td>X</td><td>10.2.0.10</td>
+    <td>serveur1</td><td>X</td><td>10.2.0.10</td><td>08-00-27-f7-16-d3</td>
   </tr>
 </table>
 
