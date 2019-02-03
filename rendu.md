@@ -1,7 +1,7 @@
 Tableau des ip
 <table>
   <tr>
-    <td>Machine</td><td>net1</td><td>net2</td>
+    <td>Machine</td><td>net1</td><td>net2</td><td>MAC</td>
   </tr>
   <tr>
     <td>client1</td><td>10.1.0.10</td><td>X</td>
@@ -10,12 +10,12 @@ Tableau des ip
     <td>routeur1</td><td>10.1.0.254</td><td>10.2.254</td>
   </tr>
   <tr>
-    <td>serveur1</td></td>X</td><td>10.2.0.10</td>
+    <td>serveur1</td><td>X</td><td>10.2.0.10</td>
   </tr>
 </table>
 
 Grand2petit2
-'''
+```
 serveur
 [oui@serveur ~]$ ping routeur
 PING Routeur (10.2.0.254) 56(84) bytes of data.
@@ -35,11 +35,11 @@ PING Routeur (10.1.0.254) 56(84) bytes of data.
 ^C
 
 
-'''
+```
 
 petit3
 
-'''
+```
 
 [oui@routeur ~]$ ip route show
 10.1.0.0/24 dev enp0s3 proto kernel scope link src 10.1.0.254 metric 100
@@ -65,65 +65,65 @@ PING Client (10.1.0.10) 56(84) bytes of data.
 --- Client ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3001ms
 
-'''
+```
 
 Grand2petitA
 ARP
 
 client
-'''
+```
 [oui@client ~]$ ip n s
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:39 REACHABLE
 
-'''
+```
 
 serveur 
-'''
+```
 [oui@serveur ~]$ ip n s
 10.2.0.1 dev enp0s3 lladdr 0a:00:27:00:00:3d REACHABLE
-'''
+```
 APRES PING 
 
 client
-'''
+```
 [oui@client ~]$ ip n s
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:39 REACHABLE
 10.1.0.254 dev enp0s3 lladdr 08:00:27:8f:5d:cf REACHABLE
 
-'''
+```
 
 serveur
-'''
+```
 [oui@serveur ~]$ ip n s
 10.2.0.254 dev enp0s3 lladdr 08:00:27:9f:43:44 REACHABLE
 10.2.0.1 dev enp0s3 lladdr 0a:00:27:00:00:3d REACHABLE
 
-'''
+```
 
 Petit b
 
 routeur
-'''
+```
 [oui@routeur ~]$ ip n s
 10.2.0.1 dev enp0s8 lladdr 0a:00:27:00:00:3d REACHABLE
 
-'''
+```
 
 APRES PING
 
 
 routeur
-'''
+```
 10.1.0.10 dev enp0s3 lladdr 08:00:27:cc:48:69 REACHABLE
 10.2.0.1 dev enp0s8 lladdr 0a:00:27:00:00:3d DELAY
 10.2.0.10 dev enp0s8 lladdr 08:00:27:f7:16:d3 REACHABLE
 
-'''
+```
 
 Petit c
 
 Table arp hote vide
-'''
+```
 Interface : 10.1.0.1 --- 0x39
   Adresse Internet      Adresse physique      Type
   224.0.0.22            01-00-5e-00-00-16     statique
@@ -131,10 +131,10 @@ Interface : 10.1.0.1 --- 0x39
 Interface : 10.2.0.1 --- 0x3d
   Adresse Internet      Adresse physique      Type
   224.0.0.22            01-00-5e-00-00-16     statique
-'''
+```
 Un peux plus tard 
 
-'''
+```
 Interface : 10.1.0.1 --- 0x39
   Adresse Internet      Adresse physique      Type
   10.1.0.10             08-00-27-cc-48-69     dynamique
@@ -149,22 +149,22 @@ Interface : 10.2.0.1 --- 0x3d
   10.2.0.255            ff-ff-ff-ff-ff-ff     statique
   224.0.0.22            01-00-5e-00-00-16     statique
   224.0.0.251           01-00-5e-00-00-fb     statique
-'''
+```
 
 Petit d
 
 Client sans NAT 
-'''
+```
 [oui@client ~]$ ip n s
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:39 REACHABLE
-'''
+```
 Avec NAT et apres une recherche
 
-'''
+```
 [oui@client ~]$ ip n s
 10.0.3.2 dev enp0s8 lladdr 52:54:00:12:35:02 REACHABLE
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:39 REACHABLE
 
-'''
+```
 
 
