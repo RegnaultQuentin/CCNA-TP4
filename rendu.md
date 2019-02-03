@@ -13,9 +13,9 @@ Tableau des ip
     <td>serveur1</td><td>X</td><td>10.2.0.10</td><td>08-00-27-f7-16-d3</td>
   </tr>
 </table>
-I. Spéléologie réseau
-1. Création des réseaux
-2. Création des VMs
+<b>I. Spéléologie réseau </b><br>
+<b>1. Création des réseaux</b><br>
+<b>2. Création des VMs</b><br>
 
 Ping du client1 vers routeur1
 ```
