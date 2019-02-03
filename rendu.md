@@ -76,9 +76,9 @@ PING Client (10.1.0.10) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% packet loss, time 3001ms
 
 ```
-<b>II. Spéléologie réseau<b><br>
-<b>1. ARP<b><br>
-<b>A. Manip 1<b><br>
+<b>II. Spéléologie réseau</b><br>
+<b>1. ARP</b><br>
+<b>A. Manip 1</b><br>
 
 Le client avec une table ARP vide.La ligne visible est la connection SSH
 ```
@@ -110,7 +110,7 @@ Le serveur après le ping du client. La même chose mais pour le client.
 
 ```
 
-<b>B. Manip 2<b><br>
+<b>B. Manip 2</b><br>
 Table ARP vide.<br>
 Table du routeur vide. La ligne present correspond au serveur SSH.
 ```
@@ -128,7 +128,7 @@ La table du routeur. Les nouvelles lignes correspondent aux routes prises par le
 
 ```
 
-<b>C. Manip 3<br><br>
+<b>C. Manip 3</b><br>
 
 La table ARP de l'hôte vide.
 ```
