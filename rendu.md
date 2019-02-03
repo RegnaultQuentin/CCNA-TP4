@@ -13,17 +13,12 @@ Tableau des ip
     <td>serveur1</td><td>X</td><td>10.2.0.10</td><td>08-00-27-f7-16-d3</td>
   </tr>
 </table>
+I. Spéléologie réseau
+1. Création des réseaux
+2. Création des VMs
 
-Grand2petit2
+Ping du client1 vers routeur1
 ```
-serveur
-[oui@serveur ~]$ ping routeur
-PING Routeur (10.2.0.254) 56(84) bytes of data.
-64 bytes from Routeur (10.2.0.254): icmp_seq=1 ttl=64 time=0.477 ms
-64 bytes from Routeur (10.2.0.254): icmp_seq=2 ttl=64 time=0.340 ms
-64 bytes from Routeur (10.2.0.254): icmp_seq=3 ttl=64 time=0.398 ms
-64 bytes from Routeur (10.2.0.254): icmp_seq=4 ttl=64 time=0.367 ms
-^C
 client
 
 [oui@client ~]$ ping routeur
@@ -33,11 +28,21 @@ PING Routeur (10.1.0.254) 56(84) bytes of data.
 64 bytes from Routeur (10.1.0.254): icmp_seq=3 ttl=64 time=0.380 ms
 64 bytes from Routeur (10.1.0.254): icmp_seq=4 ttl=64 time=0.293 ms
 ^C
-
-
+```
+Ping du serveur1 vers routeur1
+```
+serveur
+[oui@serveur ~]$ ping routeur
+PING Routeur (10.2.0.254) 56(84) bytes of data.
+64 bytes from Routeur (10.2.0.254): icmp_seq=1 ttl=64 time=0.477 ms
+64 bytes from Routeur (10.2.0.254): icmp_seq=2 ttl=64 time=0.340 ms
+64 bytes from Routeur (10.2.0.254): icmp_seq=3 ttl=64 time=0.398 ms
+64 bytes from Routeur (10.2.0.254): icmp_seq=4 ttl=64 time=0.367 ms
+^C
 ```
 
-petit3
+3. Mise en place du routage statique
+
 
 ```
 
