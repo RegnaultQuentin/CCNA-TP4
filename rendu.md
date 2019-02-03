@@ -1,7 +1,16 @@
 Tableau des ip
 <table>
   <tr>
-    <td>Machine</td>
+    <td>Machine</td><td>net1</td><td>net2</td>
+  </tr>
+  <tr>
+    <td>client1</td><td>10.1.0.10</td><td>X</td>
+  </tr>
+  <tr>
+    <td>routeur1</td><td>10.1.0.254</td><td>10.2.254</td>
+  </tr>
+  <tr>
+    <td>serveur1</td></td>X</td><td>10.2.0.10</td>
   </tr>
 </table>
 
